@@ -290,6 +290,8 @@ public:
     , m_args(ArgStream(stream))
     {}
 
+    Message(){}
+
     const char* address() const
     {
         return m_address;
