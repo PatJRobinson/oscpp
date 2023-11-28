@@ -8,7 +8,7 @@ endif ()
 set(CMAKE_CXX_STANDARD 11)
 set(CMAKE_C_STANDARD 99)
 
-enable_testing()
+add_library(${PROJECT_NAME} INTERFACE)
 
-add_subdirectory(test)
+target_include_directories(${PROJECT_NAME} INTERFACE ${CMAKE_CURRENT_SOURCE_DIR}/include)
 
